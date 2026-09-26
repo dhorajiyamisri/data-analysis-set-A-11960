@@ -47,61 +47,7 @@ actionable business insights using <b>Excel, SQL, Python, and Power BI</b>.
 | **Domain**        | **Data Analytics & Logistics**          |
 
 ---
-<table>
-<tr>
-
-<td width="52%" valign="middle">
-
-<h1>🚚 Delivery Delay Analysis</h1>
-
-<h3>📊 End-to-End Delivery Performance Analytics</h3>
-
-<p>
-An end-to-end data analytics project focused on analyzing delivery delays,
-identifying operational patterns, measuring delivery performance, and
-generating actionable business insights using
-<b>Excel, SQL, Python, and Power BI.</b>
-</p>
-
-<br>
-
-<h3>🎯 Project Focus</h3>
-
-<p>
-📦 Delivery Performance &nbsp; • &nbsp;
-⏱️ Delay Analysis &nbsp; • &nbsp;
-📊 Business Insights
-</p>
-
-<br>
-
-<p>
-<b>👤 Misari Dhorajiya</b><br>
-🎓 Student ID: <b>11960</b><br>
-📚 Practical Examination — <b>Set A</b><br>
-🏢 Red & White Skill Education
-</p>
-
-</td>
-
-<td width="48%" align="center">
-
-<img src="YOUR_DELIVERY_DELAY_GIF_URL" width="100%">
-
-<br><br>
-
-<b>🚚 Delivery Delay Analytics</b>
-
-<br>
-
-<sub>
-Tracking deliveries • Detecting delays • Finding patterns • Generating insights
-</sub>
-
-</td>
-
-</tr>
-</table>
+<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/2c2c3796-11e9-4398-8d77-035a9630d59c" />
 
 # 🎯 Business Objective
 
