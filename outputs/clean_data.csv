@@ -1,0 +1,13 @@
+record_id,month,route_id,hub,promised_days,actual_days,service_type,delay_days
+1, Jan,R1, Mumbai,2,2,Express,0
+2, Jan,R2, Chennai,3,4,Express,1
+3, Jan,R3, Delhi,5,8,Standard,3
+4, Jan,R4, Mumbai,6,10,Standard,4
+5, Feb,R1, Chennai,2,5,Express,3
+6, Feb,R2, Delhi,3,3,Express,0
+7, Feb,R3, Delhi,5,10,Standard,5
+8, Feb,R4, Chennai,6,7,Standard,1
+9,Mar,R1, Delhi,2,8,Express,6
+10,Mar,R2,Mumbai,3,5,Express,2
+11,Mar,R3, Chennai,5,5,Standard,0
+12, Mar,R4, Mumbai,6,15,Standard,9
