@@ -1,550 +1,238 @@
 <div align="center">
 
-🚚 Delivery Delay Analysis
+🚚 Delivery Delay Analytics
 
-📊 Data Analysis Practical Examination — Set A
+Data Analysis Practical Examination · Set A
 
-An End-to-End Delivery Performance Analytics Project using Excel, SQL, Python & Power BI
+An end-to-end analytics project built with Excel, PostgreSQL, Python & Power BI
 
-<br>
-
-
+<br/>
 
 
 
 
 
 
-<br>
-
-👩‍💻 Student Information
-
-Misari Dhorajiyia
-
-🎓 Data Science & AI/ML Student
-🆔 Student ID: 11960
-📚 Practical Examination: Data Analysis — Set A
-🚚 Project Domain: Logistics & Delivery Analytics
-
-<br>
 
 
+<br/>
 
-
-
+Misari Dhorajiyia · Data Science & AI/ML Student · Student ID: 11960
 
 </div>
 
-🧭 Table of Contents
+📌 Executive Summary
 
-📌 Project Overview
+This project analyses delivery performance and delay patterns across routes, hubs, service types and months.
 
-🎯 Business Objective
+The analysis follows a complete data workflow:
 
-❓ Business Questions
+Raw Data → Data Cleaning → Transformation → SQL Analysis → Python Analysis → Dashboard → Business Insights
 
-🔎 What I Built
+The same business definitions are maintained across Excel, SQL, Python and Power BI so that the final results can be independently validated.
 
-🔄 End-to-End Workflow
+Key numbers
 
-📊 Project Snapshot
-
-📂 Dataset
-
-🧹 Data Cleaning & Preparation
-
-📐 Metric Definitions
-
-📗 Excel Analysis
-
-🗄️ SQL Analysis
-
-🐍 Python Analysis
-
-📊 Power BI Dashboard
-
-💡 Key Findings
-
-🎯 Business Recommendation
-
-⚠️ Limitation
-
-🔄 Cross-Tool Reconciliation
-
-📁 Repository Structure
-
-🛠️ Tools & Technologies
-
-▶️ Setup & Execution
-
-📦 Output Files
-
-🎥 Practical Examination Video
-
-📚 References
-
-👤 Authorship
-
-📌 Project Overview
-
-Delivery Delay Analysis is an end-to-end data analysis project created for the Data Analysis Practical Examination — Set A.
-
-The project analyses delivery performance across:
-
-🚚 Routes
-
-📍 Hubs
-
-⚡ Service Types
-
-📅 Months
-
-⏱️ Promised vs Actual Delivery Days
-
-The same business rules and cleaned dataset are analysed independently using Microsoft Excel, SQL, Python and Power BI.
-
-The goal is not only to calculate delay values, but to demonstrate a complete data-analysis workflow:
-
-Raw Data → Cleaning → Transformation → Analysis → Visualization → Business Insights
-
-🎯 Business Objective
-
-The main objective of this project is to identify delivery-delay patterns and understand which routes, hubs, service types and months contribute most to cumulative delivery delays.
-
-The analysis is designed to answer practical operational questions and convert raw delivery records into clear, measurable business insights.
-
-🚚 Why This Analysis Matters
-
-Delivery delays can affect:
-
-Customer satisfaction
-
-Operational efficiency
-
-Route planning
-
-Service-level performance
-
-Hub-level workload
-
-Delivery reliability
-
-By analysing delay patterns consistently across multiple tools, the project demonstrates how raw operational data can be transformed into decision-support information.
-
-❓ Business Questions
-
-Question 01
-
-Which service type and route contribute the most cumulative delivery delay?
-
-Question 02
-
-Which hubs and months show the highest delivery delay, and where should operational attention be focused?
-
-🔎 What I Built
-
-📗 Excel — Data Preparation & Business Summary
-
-I used Excel to perform the spreadsheet-based data preparation and analysis.
-
-Implemented:
-
-Preserved the original raw delivery records.
-
-Created a route lookup table.
-
-Removed the exact duplicate record.
-
-Added service_type using XLOOKUP.
-
-Calculated delay_days using an Excel formula.
-
-Used SUMIFS for hub-level delay analysis.
-
-Created a service-type/month PivotTable.
-
-Created a column chart from the PivotTable.
-
-Kept formulas and PivotTable analysis editable.
-
-🗄️ SQL — Relational Data Analysis
-
-I created a relational SQL structure and reproduced the business analysis from a clean database.
-
-Implemented:
-
-Created routes and deliveries tables.
-
-Defined suitable data types.
-
-Added primary keys.
-
-Added a foreign-key relationship.
-
-Loaded exactly 12 clean delivery records.
-
-Calculated delay directly in SQL.
-
-Analysed delay by service type.
-
-Identified routes with delay greater than 8 days.
-
-Identified the top two hubs by cumulative delay.
-
-Performed a data-integrity diagnostic using LEFT JOIN.
-
-Exported analytical query results as CSV files.
-
-🐍 Python — Reproducible Data Analysis
-
-Python was used for programmatic data cleaning, transformation, validation, analysis and visualization.
-
-Implemented:
-
-Loaded both raw CSV files using Pandas.
-
-Applied suitable numeric data types.
-
-Removed the exact duplicate.
-
-Performed a left merge using route_id.
-
-Asserted that exactly 12 records remained.
-
-Validated that there were no unmatched service_type values.
-
-Calculated delay_days using .clip(lower=0).
-
-Created service-level delay summaries.
-
-Calculated delay incidence rate.
-
-Identified the route with the highest cumulative delay.
-
-Calculated the route's share of overall delay.
-
-Generated the monthly delay chart using Matplotlib.
-
-Exported clean data and summary outputs.
-
-📊 Power BI — Interactive Business Dashboard
-
-Power BI was used to turn the cleaned data into an interactive dashboard.
-
-Implemented:
-
-Loaded both datasets.
-
-Applied data types using Power Query.
-
-Removed the duplicate record.
-
-Created an active one-to-many relationship.
-
-Created a dedicated Measures table.
-
-Created DAX measures for delivery count, total delay and delay incidence.
-
-Built KPI cards.
-
-Created service-type delay analysis.
-
-Created a monthly delay trend.
-
-Added a hub slicer.
-
-Tested filtering behaviour.
-
-Reconciled the dashboard results with Excel, SQL and Python.
-
-🔄 End-to-End Workflow
-
-                    🚚 RAW DELIVERY DATA
-                           │
-                           ▼
-                  📂 Load CSV Files
-                           │
-                           ▼
-                 🧹 Data Cleaning
-                           │
-                    Remove Duplicate
-                           │
-                           ▼
-                    🔗 Route Lookup
-                           │
-                           ▼
-                 ⏱️ Calculate Delay
-                           │
-             ┌─────────────┼─────────────┐
-             ▼             ▼             ▼
-          📗 Excel       🗄️ SQL       🐍 Python
-             │             │             │
-             └─────────────┼─────────────┘
-                           │
-                           ▼
-                    📊 Power BI
-                           │
-                           ▼
-                   💡 Business Insights
-                           │
-                           ▼
-                    🎯 Recommendation
-
-📊 Project Snapshot
-
-📊 Metric
+Metric
 
 Result
-
-📦 Original Delivery Records
-
-13
-
-🧹 Duplicate Removed
-
-1
-
-✅ Clean Delivery Records
-
-12
-
-⏱️ Total Delay Days
-
-34
-
-🚨 Delayed Records
-
-9
-
-📈 Delay Incidence Rate
-
-75.00%
-
-🛣️ Highest Delay Route
-
-R4 — Rural Feeder
-
-⏱️ Highest Route Delay
-
-14 days
-
-📍 Highest Delay Hub
-
-Mumbai
-
-⏱️ Highest Hub Delay
-
-15 days
-
-📅 Highest Delay Month
-
-March
-
-⏱️ March Delay
-
-17 days
-
-📂 Dataset
-
-The project uses two CSV datasets supplied as part of the practical examination.
-
-1️⃣ deliveries.csv
-
-This is the main fact table containing delivery-level records.
-
-Column
-
-Data Type
-
-Description
-
-record_id
-
-Integer
-
-Unique delivery record identifier
-
-month
-
-Text
-
-Ordered month category: Jan, Feb, Mar
-
-route_id
-
-Text
-
-Route lookup key
-
-hub
-
-Text
-
-Delivery hub
-
-promised_days
-
-Numeric
-
-Promised delivery duration
-
-actual_days
-
-Numeric
-
-Actual delivery duration
-
-2️⃣ routes.csv
-
-This is the lookup table containing route and service information.
-
-Column
-
-Data Type
-
-Description
-
-route_id
-
-Text
-
-Unique route identifier
-
-route
-
-Text
-
-Route name
-
-service_type
-
-Text
-
-Express or Standard
-
-🔗 Data Relationship
-
-The route_id field is used to connect the two datasets.
-
-routes.route_id
-      │
-      │ 1
-      │
-      ▼
-deliveries.route_id
-      *
-
-A single route can appear in multiple delivery records.
-
-🧹 Data Cleaning & Preparation
-
-The original deliveries.csv contains 13 rows, including one intentional exact duplicate.
-
-The duplicate is:
-
-record_id = 12
-month     = Mar
-route_id  = R4
-hub       = Mumbai
-promised  = 6
-actual    = 15
-
-The duplicate is removed before analysis.
-
-🧹 Cleaning Summary
-
-Stage
-
-Record Count
 
 Raw delivery records
 
 13
 
-Exact duplicate
+Duplicate records removed
 
 1
 
-Final clean records
+Clean delivery records
 
 12
 
-🔄 Cleaning Process
+Total delay days
 
-13 Raw Records
-      │
-      ▼
-Identify Exact Duplicate
-      │
-      ▼
-Remove Duplicate
-      │
-      ▼
-12 Unique Records
-      │
-      ▼
-Map service_type using route_id
-      │
-      ▼
-Calculate delay_days
-      │
-      ▼
-Ready for Analysis
+34
 
-The same 12 clean records are used consistently across the four analysis modules.
+Delayed records
 
-📐 Metric Definitions
+9
 
-⏱️ Delay Days
+Delay incidence
 
-The project defines delivery delay as:
+75.00%
+
+Highest-delay route
+
+R4 · Rural Feeder
+
+Highest route delay
+
+14 days
+
+Highest-delay hub
+
+Mumbai · 15 days
+
+Highest-delay month
+
+March · 17 days
+
+🎯 Business Problem
+
+Delivery operations need a simple way to understand where delays are accumulating and which operational segments require attention.
+
+This project answers two practical questions:
+
+Which service type and route contribute the most cumulative delivery delay?
+
+Which hubs and months show the highest delay, and where should operational review be focused?
+
+The objective is to turn delivery-level records into clear, reproducible and decision-oriented insights.
+
+🔍 Analysis Scope
+
+The project evaluates four dimensions:
+
+                 DELIVERY PERFORMANCE
+                         │
+       ┌─────────────────┼─────────────────┐
+       ▼                 ▼                 ▼
+    SERVICE             ROUTE             HUB
+   Express/             R1–R4          Chennai/
+   Standard                              Delhi/
+                                         Mumbai
+                         │
+                         ▼
+                       MONTH
+                    Jan / Feb / Mar
+
+📊 Dashboard Preview
+
+Place the final Power BI screenshot at outputs/powerbi_dashboard.png.
+
+
+
+📈 Python Analysis
+
+Place the generated Python chart at outputs/python_chart.png.
+
+
+
+🧠 Data & Metric Logic
+
+Dataset
+
+The project uses two raw CSV files:
+
+data/raw/
+├── deliveries.csv
+└── routes.csv
+
+deliveries.csv
+
+Column
+
+Description
+
+record_id
+
+Delivery record identifier
+
+month
+
+Jan, Feb or Mar
+
+route_id
+
+Route lookup key
+
+hub
+
+Delivery hub
+
+promised_days
+
+Promised delivery duration
+
+actual_days
+
+Actual delivery duration
+
+routes.csv
+
+Column
+
+Description
+
+route_id
+
+Route identifier
+
+route
+
+Route name
+
+service_type
+
+Express or Standard
+
+🔗 Data Model
+
+The route table is the lookup/master table and deliveries is the fact table.
+
+routes
+  │
+  │  route_id
+  │  1 : many
+  ▼
+deliveries
+
+This relationship is implemented in SQL and Power BI and reproduced through a left merge in Python.
+
+🧹 Data Cleaning
+
+The raw delivery file contains 13 records, including one exact duplicate.
+
+Raw records             13
+          │
+          ▼
+Remove exact duplicate   1
+          │
+          ▼
+Clean records            12
+
+The original raw data is preserved separately from the cleaned dataset.
+
+Validation
+
+Expected clean rows      = 12
+Actual clean rows        = 12
+Unmatched route IDs      = 0
+
+⏱️ Delay Definition
+
+For every delivery:
 
 delay_days = MAX(actual_days - promised_days, 0)
 
-This means:
+This prevents early/on-time deliveries from producing negative delay values.
 
-If actual_days > promised_days → positive delay.
-
-If actual_days = promised_days → delay is 0.
-
-If actual_days < promised_days → delay is 0.
-
-🚨 Delay Incidence Rate
+Delay incidence
 
 Delay Incidence Rate =
-Number of delayed records
--------------------------
-Total clean records
+Delayed Records / Total Clean Records
 
-A record is considered delayed when:
+A record is delayed when:
 
 actual_days > promised_days
 
-For this dataset:
+📗 Excel
 
-9 delayed records
------------------ = 75.00%
-12 total records
-
-⏱️ Total Cumulative Delay
-
-Total delay is the sum of record-level delay_days.
-
-Total Delay Days = SUM(delay_days)
-
-For this project:
-
-Total cumulative delay = 34 days
-
-This represents cumulative record-level delay, not the number of unique parcels currently requiring expedited delivery.
-
-📗 Excel Analysis
-
-📁 Workbook
+Workbook
 
 excel/analysis.xlsx
 
-The Excel workbook contains four required sheets.
+Sheets
 
 Sheet
 
@@ -552,77 +240,33 @@ Purpose
 
 Raw
 
-Original 13-row delivery dataset
+Original 13-row delivery data
 
 Lookup
 
-Route and service lookup data
+Route/service lookup table
 
 Clean
 
-12-row cleaned and enriched dataset
+Cleaned 12-row analytical dataset
 
 Summary
 
-KPIs, hub analysis, PivotTable and chart
+KPIs, summaries, PivotTable and chart
 
-🧹 Excel Cleaning
+Key Excel operations
 
-The Raw sheet preserves the original 13 records.
+XLOOKUP for service_type
 
-The Clean sheet contains the cleaned 12-record dataset.
+MAX() for delay_days
 
-The exact duplicate was removed from the Clean sheet.
+SUMIFS() for hub-level analysis
 
-🔎 Service Type Lookup
+PivotTable for service type × month
 
-service_type is populated from the Lookup sheet using route_id.
+Column chart for visual comparison
 
-Example logic:
-
-=XLOOKUP(route_id,Lookup!route_id,Lookup!service_type)
-
-⏱️ Excel Delay Calculation
-
-The delay_days column uses:
-
-=MAX(actual_days-promised_days,0)
-
-This formula is applied to all clean records.
-
-📍 Hub Summary
-
-SUMIFS is used to calculate cumulative delay by hub.
-
-Results
-
-Hub
-
-Total Delay Days
-
-Chennai
-
-5
-
-Delhi
-
-14
-
-Mumbai
-
-15
-
-📊 PivotTable
-
-The Summary sheet contains a PivotTable with:
-
-Rows: service_type
-
-Columns: month
-
-Values: Sum of delay_days
-
-PivotTable Result
+Service × Month Delay
 
 Service Type
 
@@ -654,7 +298,7 @@ Standard
 
 22
 
-Grand Total
+Total
 
 8
 
@@ -664,188 +308,127 @@ Grand Total
 
 34
 
-📈 Excel Chart
+🗄️ SQL
 
-The workbook also contains a column chart based on the PivotTable.
+SQL files
 
-The chart compares service-type delay across the three months.
+sql/
+├── setup.sql
+└── queries.sql
 
-🗄️ SQL Analysis
+The SQL workflow creates the relational model, loads the clean data and runs the required analytical queries.
 
-📁 SQL Files
-
-sql/setup.sql
-sql/queries.sql
-
-The SQL workflow is designed to run in this order:
-
-1️⃣ setup.sql
-      ↓
-2️⃣ queries.sql
-
-🏗️ Database Design
-
-Two relational tables are created:
+Database structure
 
 routes
-├── route_id        PRIMARY KEY
-├── route
-└── service_type
+-------
+route_id        PRIMARY KEY
+route
+service_type
 
 deliveries
-├── record_id       PRIMARY KEY
-├── month
-├── route_id        FOREIGN KEY
-├── hub
-├── promised_days
-└── actual_days
+----------
+record_id       PRIMARY KEY
+month
+route_id        FOREIGN KEY
+hub
+promised_days
+actual_days
 
-Relationship:
-
-routes.route_id  1 ───────── *  deliveries.route_id
-
-🔹 S2a — Delay by Service Type
-
-The query joins deliveries and routes and calculates:
-
-MAX(actual_days - promised_days, 0)
-
-Result
+Results
 
 Service Type
 
-Total Delay Days
+Service Type
+
+Total Delay
 
 Standard
 
-22
+22 days
 
 Express
 
-12
+12 days
 
-The result is ordered by total delay in descending order.
-
-🔹 S2b — Routes with Significant Delay
-
-The query uses:
-
-GROUP BY
-HAVING
-
-to identify routes whose summed delay exceeds 8 days.
-
-Result
+Routes with delay > 8
 
 Route
 
-Total Delay Days
+Total Delay
 
 R4
 
-14
+14 days
 
 R1
 
-9
+9 days
 
-🔹 S2c — Top Two Hubs
-
-The query identifies the top two hubs by cumulative delay.
-
-Result
+Top 2 hubs
 
 Hub
 
-Total Delay Days
+Total Delay
 
 Mumbai
 
-15
+15 days
 
 Delhi
 
-14
+14 days
 
-🔎 SQL Data Integrity Diagnostic
+Data integrity check
 
-A LEFT JOIN diagnostic was performed to check for delivery records whose route_id does not exist in the lookup table.
+A LEFT JOIN diagnostic was used to identify delivery records without a matching route.
 
-Result
+Unmatched route IDs: 0
 
-Unmatched route IDs = 0
+🐍 Python
 
-This confirms that every clean delivery record has a matching route.
-
-📦 SQL Output Files
-
-outputs/sql/
-├── S2a_service_type_delay.csv
-├── S2b_routes_delay_gt_8.csv
-└── S2c_top_2_hubs.csv
-
-🐍 Python Analysis
-
-📁 Python File
+Script
 
 python/analysis.py
 
-Python provides a reproducible programmatic analysis pipeline.
+Libraries
 
-🔄 Python Workflow
+pandas
+matplotlib
 
-Load deliveries.csv
-        +
-Load routes.csv
-        ↓
-Set Numeric Data Types
-        ↓
-Remove Exact Duplicate
-        ↓
-Left Merge on route_id
-        ↓
-Assert 12 Rows
-        ↓
-Check Unmatched service_type
-        ↓
+Pipeline
+
+Load CSVs
+   ↓
+Type conversion
+   ↓
+Remove exact duplicate
+   ↓
+Left merge on route_id
+   ↓
+Validate 12 rows
+   ↓
+Validate service_type
+   ↓
 Calculate delay_days
-        ↓
-Service Summary
-        ↓
-Route Analysis
-        ↓
-Monthly Visualization
-        ↓
-Export Results
+   ↓
+Group & analyse
+   ↓
+Visualize
+   ↓
+Export outputs
 
-🔗 Merge Validation
-
-The delivery data is merged with the route lookup using:
-
-df.merge(routes, on="route_id", how="left")
-
-The analysis validates that:
-
-Final rows = 12
-Unmatched service_type = 0
-
-This prevents accidental row loss or invalid route mappings.
-
-⏱️ Delay Calculation
-
-Python calculates delay using:
+Core transformation
 
 df["delay_days"] = (
     df["actual_days"] - df["promised_days"]
 ).clip(lower=0)
 
-📊 Service-Level Analysis
-
-Result
+Service summary
 
 Service Type
 
-Total Delay Days
+Delay Days
 
 Delay Incidence
 
@@ -861,103 +444,56 @@ Standard
 
 83.33%
 
-🛣️ Highest Delay Route
+Highest-delay route
 
-Python identifies:
+R4 — Rural Feeder
 
-Route: R4
-Route Name: Rural Feeder
-Total Delay: 14 days
+Total delay: 14 days
 
-Its contribution to overall delay is:
+Share of overall delay: 41.18%
 
-14 / 34 × 100 = 41.18%
-
-📈 Monthly Delay Visualization
-
-The monthly cumulative delay is:
+Monthly result
 
 Month
 
-Delay Days
+Delay
 
 Jan
 
-8
+8 days
 
 Feb
 
-9
+9 days
 
 Mar
 
-17
+17 days
 
-Python Chart
+📊 Power BI
 
-
-
-Figure: Monthly cumulative delivery delay.
-
-📤 Python Outputs
-
-outputs/
-├── clean_data.csv
-├── python_summary.csv
-└── python_chart.png
-
-📊 Power BI Dashboard
-
-📁 Power BI File
+File
 
 powerbi/dashboard.pbix
 
-The Power BI dashboard provides an interactive view of delivery performance.
+Data Model
 
-🔄 Power Query Preparation
+routes[route_id]
+       │
+       │ 1 → *
+       ▼
+deliveries[route_id]
 
-The Power Query workflow includes:
-
-Load deliveries.csv.
-
-Load routes.csv.
-
-Set suitable data types.
-
-Remove the exact duplicate.
-
-Validate the final 12 delivery records.
-
-Load the cleaned model.
-
-🔗 Data Model
-
-The model uses an active one-to-many relationship:
-
-routes
-   │
-   │ 1
-   │
-   ▼
-deliveries
-   *
-
-Filter direction:
-
-routes → deliveries
+The relationship is active and uses single-direction filtering from routes to deliveries.
 
 🧮 DAX Measures
 
-📦 Delivery Count
+Delivery Count
 
 Delivery Count =
 COUNTROWS(deliveries)
 
-Expected result:
-
-12
-
-⏱️ Total Delay Days
+Total Delay Days
 
 Total Delay Days =
 SUMX(
@@ -968,11 +504,7 @@ SUMX(
     )
 )
 
-Expected result:
-
-34
-
-🚨 Delay Incidence Rate
+Delay Incidence Rate
 
 Delay Incidence Rate =
 DIVIDE(
@@ -986,166 +518,122 @@ DIVIDE(
     0
 )
 
-Expected result:
+Dashboard KPIs
 
-75.00%
+Delivery Count          12
+Total Delay Days        34
+Delay Incidence Rate    75.00%
 
-🖥️ Dashboard Components
+Interactive elements
 
-The dashboard contains:
+KPI cards
 
-📦 KPI Cards
+Service-type delay chart
 
-Delivery Count → 12
+Monthly delay trend
 
-Total Delay Days → 34
+Hub slicer
 
-Delay Incidence Rate → 75.00%
+Route/service relationship model
 
-📊 Service Type Chart
+💡 Key Insights
 
-Express  → 12 delay days
-Standard → 22 delay days
+01 · 75% of deliveries were delayed
 
-📈 Monthly Trend
+9 out of 12 clean delivery records exceeded their promised delivery time.
 
-Jan → 8
-Feb → 9
-Mar → 17
+Delay incidence = 75.00%
 
-🎛️ Hub Slicer
-
-The interactive hub slicer allows the dashboard to be filtered by:
-
-Chennai
-
-Delhi
-
-Mumbai
-
-🖼️ Power BI Dashboard Preview
-
-
-
-Figure: Interactive Delivery Delay Analysis dashboard.
-
-💡 Key Findings
-
-🚨 Finding 01 — High Delay Incidence
-
-Out of 12 clean delivery records, 9 were delayed.
-
-Therefore:
-
-Delay Incidence Rate = 75.00%
-
-🚚 Finding 02 — Standard Service
+02 · Standard service accumulated more delay
 
 Standard service generated:
 
-22 cumulative delay days
+22 delay days
 
-while Express service generated:
+compared with:
 
-12 cumulative delay days
+12 delay days for Express.
 
-🛣️ Finding 03 — R4 is the Highest-Delay Route
+Standard also had a higher delay incidence:
 
-R4 — Rural Feeder recorded:
+Standard → 83.33%
+Express  → 66.67%
 
-14 delay days
+03 · R4 is the largest route-level contributor
 
-This represents:
+R4 — Rural Feeder — generated:
 
-41.18% of the total 34 delay days
+14 of 34 total delay days
 
-📍 Finding 04 — Mumbai Has the Highest Hub Delay
+That is approximately:
 
-Hub-level results:
+41.18% of cumulative delay
 
-Mumbai  → 15 days
-Delhi   → 14 days
-Chennai →  5 days
+04 · Mumbai has the highest hub-level delay
 
-Mumbai therefore has the highest cumulative delay in this dataset.
+Mumbai    15 days
+Delhi     14 days
+Chennai    5 days
 
-📅 Finding 05 — March Shows the Highest Delay
+05 · March accounts for half of total delay
 
-Monthly delay:
+January    8 days
+February   9 days
+March     17 days
 
-January  →  8 days
-February →  9 days
-March    → 17 days
+March contributed:
 
-March accounts for:
-
-17 / 34 × 100 = 50.00%
-
-of the total cumulative delay.
+50.00% of total cumulative delay
 
 🎯 Business Recommendation
 
-Based on the observed results, operational review should focus on:
+Based on the observed dataset, operational review can be prioritised around:
 
-1️⃣ R4 — Rural Feeder
+🛣️ R4 — Rural Feeder
 
-R4 contributes the highest cumulative route delay.
+Investigate the reasons behind its high cumulative delay, such as route conditions, handling time, scheduling or capacity.
 
-A detailed review could investigate:
+📅 March operations
 
-Route distance
+Review the operational conditions associated with the March increase before assuming the pattern is persistent.
 
-Hub handling time
+📦 Standard service
 
-Delivery capacity
+Monitor Standard-service performance because it shows both higher cumulative delay and higher delay incidence in this dataset.
 
-Operational bottlenecks
-
-Scheduling constraints
-
-2️⃣ March Operations
-
-March records the highest monthly delay.
-
-A month-level operational review can help identify whether the increase is related to:
-
-Route workload
-
-Capacity
-
-Scheduling
-
-Hub performance
-
-Delivery volume patterns
-
-3️⃣ Standard Service Monitoring
-
-Standard service records higher cumulative delay and delay incidence than Express service in this dataset.
-
-Regular service-level monitoring can help identify recurring performance gaps.
+Note: These are analytical recommendations based on the supplied synthetic dataset, not predictions about future operational performance.
 
 ⚠️ Limitation
 
-This analysis uses a synthetic dataset containing only 12 unique delivery records.
+This project uses a small synthetic dataset with 12 unique delivery records.
 
-Therefore:
+Therefore, the results demonstrate the analytical methodology and reproducibility of the workflow, but should not be treated as statistically representative of a real logistics operation.
 
-The dataset is small.
+A production analysis would benefit from:
 
-The results demonstrate the analytical workflow.
+Larger historical datasets
 
-The results should not be interpreted as a real-world operational forecast.
+Delivery volume
 
-Larger historical datasets would be required for reliable operational decision-making.
+Distance and geography
 
-🔄 Cross-Tool Reconciliation
+Weather information
 
-One of the key validation steps was comparing the total cumulative delay across all four analysis tools.
+Capacity/utilisation
 
-Analysis Tool
+Traffic conditions
 
-Total Delay Days
+Actual timestamps
+
+Customer/service-level information
+
+🔄 Cross-Tool Validation
+
+A core objective of this project was to maintain the same business logic across all analysis environments.
+
+Tool
+
+Total Delay
 
 📗 Excel
 
@@ -1163,281 +651,211 @@ Total Delay Days
 
 34
 
-✅ Final Reconciliation
+✅ Reconciliation
 
-Excel = SQL = Python = Power BI = 34 delay days
+Excel ─────┐
+SQL ───────┤
+Python ────┼──► 34 Total Delay Days
+Power BI ──┘
 
-This confirms that the core cleaning and delay-calculation logic is consistent across the project.
+The matching aggregate provides a simple cross-tool validation of the cleaning and delay calculation logic.
 
 📁 Repository Structure
 
 data-analysis-set-A-11960/
 │
-├── 📄 README.md
-├── 📄 requirements.txt
-├── 📄 .gitignore
+├── README.md
+├── requirements.txt
+├── .gitignore
 │
-├── 📂 data/
-│   └── 📂 raw/
+├── data/
+│   └── raw/
 │       ├── deliveries.csv
 │       └── routes.csv
 │
-├── 📂 excel/
-│   └── 📊 analysis.xlsx
+├── excel/
+│   └── analysis.xlsx
 │
-├── 📂 sql/
-│   ├── 🗄️ setup.sql
-│   └── 🗄️ queries.sql
+├── sql/
+│   ├── setup.sql
+│   ├── queries.sql
+│   └── results/
+│       ├── S2a_service_type_delay.csv
+│       ├── S2b_routes_delay_gt_8.csv
+│       └── S2c_top_2_hubs.csv
 │
-├── 📂 python/
-│   └── 🐍 analysis.py
+├── python/
+│   └── analysis.py
 │
-├── 📂 powerbi/
-│   └── 📊 dashboard.pbix
+├── powerbi/
+│   └── dashboard.pbix
 │
-└── 📂 outputs/
+└── outputs/
     ├── clean_data.csv
     ├── python_summary.csv
     ├── python_chart.png
-    ├── powerbi_dashboard.png
-    │
-    └── 📂 sql/
-        ├── S2a_service_type_delay.csv
-        ├── S2b_routes_delay_gt_8.csv
-        └── S2c_top_2_hubs.csv
+    └── powerbi_dashboard.png
 
-🛠️ Tools & Technologies
+⚙️ Reproducibility
 
-Technology
-
-Purpose
-
-📗 Microsoft Excel
-
-Data cleaning, formulas, PivotTable & chart
-
-🗄️ PostgreSQL
-
-Database creation & SQL analysis
-
-🐍 Python
-
-Programmatic data analysis
-
-🐼 Pandas
-
-Data manipulation & transformation
-
-📈 Matplotlib
-
-Data visualization
-
-📊 Power BI
-
-Interactive dashboard
-
-🔧 Git
-
-Version control
-
-🌐 GitHub
-
-Repository & project submission
-
-⚙️ Data & File Requirements
-
-The repository keeps the original raw files separate from generated analytical outputs.
-
-Raw Data
-
-data/raw/deliveries.csv
-data/raw/routes.csv
-
-Analysis Files
-
-excel/analysis.xlsx
-sql/setup.sql
-sql/queries.sql
-python/analysis.py
-powerbi/dashboard.pbix
-
-Outputs
-
-outputs/
-
-This separation makes the project easier to reproduce and review.
-
-▶️ Setup & Execution
-
-🗄️ SQL Setup
-
-Open the SQL environment and execute:
-
-1. sql/setup.sql
-2. sql/queries.sql
-
-setup.sql creates the database tables and loads the clean records.
-
-queries.sql executes the required analytical queries.
-
-🐍 Python Setup
+Python
 
 From the repository root:
 
 pip install -r requirements.txt
-
-Run:
-
 python python/analysis.py
 
-The script generates:
+Generated files:
 
 outputs/clean_data.csv
 outputs/python_summary.csv
 outputs/python_chart.png
 
-📗 Excel
+SQL
+
+Run in order:
+
+1. sql/setup.sql
+2. sql/queries.sql
+
+The setup script creates the database objects and loads the clean records.
+
+Excel
 
 Open:
 
 excel/analysis.xlsx
 
-The workbook contains:
+The workbook contains the raw, lookup, clean and summary analysis.
 
-Raw
-Lookup
-Clean
-Summary
-
-The formulas and PivotTable remain editable for examiner verification.
-
-📊 Power BI
+Power BI
 
 Open:
 
 powerbi/dashboard.pbix
 
-If the repository is moved to another computer, update the CSV source path in Power Query and refresh the model.
+If the repository is moved to another machine, update the documented CSV source path and refresh the model.
 
-📦 Output Files
+📦 Deliverables
 
-File
+Deliverable
 
-Purpose
+Location
 
-clean_data.csv
+Excel workbook
 
-Final 12-row merged dataset
+excel/analysis.xlsx
 
-python_summary.csv
+SQL setup
 
-Python service-level analysis
+sql/setup.sql
 
-python_chart.png
+SQL analysis
 
-Monthly delay visualization
+sql/queries.sql
 
-powerbi_dashboard.png
+Python analysis
 
-Power BI dashboard preview
+python/analysis.py
 
-S2a_service_type_delay.csv
+Power BI dashboard
 
-SQL service-type analysis
+powerbi/dashboard.pbix
 
-S2b_routes_delay_gt_8.csv
+Clean dataset
 
-SQL high-delay route analysis
+outputs/clean_data.csv
 
-S2c_top_2_hubs.csv
+Python summary
 
-SQL top-two hub analysis
+outputs/python_summary.csv
 
-🎥 Practical Examination Video
+Python chart
 
-🎬 Video Link
+outputs/python_chart.png
 
-[PASTE YOUR UNLISTED YOUTUBE / GOOGLE DRIVE VIDEO LINK HERE]
+Power BI screenshot
 
-⏱️ Duration
+outputs/powerbi_dashboard.png
 
-[ENTER VIDEO DURATION — 5 to 10 MINUTES]
+🎥 Practical Demonstration
 
-🎤 Video Coverage
+Video: PASTE_YOUR_UNLISTED_YOUTUBE_OR_GOOGLE_DRIVE_LINK_HERE
 
-The practical demonstration covers:
+Duration: PASTE_DURATION_HERE
 
-👋 Introduction and student information
+The demonstration should cover:
 
-🎯 Business objective
+Project introduction
 
-📂 Dataset structure
+Dataset structure
 
-🧹 Duplicate identification and cleaning
+Duplicate cleaning
 
-📗 Excel XLOOKUP and delay calculation
+Excel analysis
 
-📊 Excel PivotTable and chart
+SQL query
 
-🗄️ SQL analytical query
+Python merge and validation
 
-🐍 Python merge and assertion
+Python visualization
 
-📈 Python visualization
+Power BI model
 
-📊 Power BI data model
+DAX measures
 
-🧮 DAX measures
+Dashboard interaction
 
-🎛️ Power BI slicer
+Key findings
 
-💡 Two key findings
+Recommendation
 
-🎯 Recommendation
+Limitation
 
-⚠️ Limitation
-
-📁 GitHub repository structure
+Repository structure
 
 📚 References
 
 Red & White Skill Education — Data Analysis Practical Examination, Set A
 
-Python Documentation
+Microsoft Excel documentation
 
-Pandas Documentation
+PostgreSQL documentation
 
-Matplotlib Documentation
+Python documentation
 
-Microsoft Excel Documentation
+Pandas documentation
 
-Microsoft Power BI Documentation
+Matplotlib documentation
 
-PostgreSQL Documentation
+Microsoft Power BI documentation
 
-👤 Authorship
-
-All work in this repository is my own except where cited.
-
-This repository contains the complete analysis workflow, source files and generated outputs for the Data Analysis Practical Examination — Set A.
+👤 Author
 
 <div align="center">
 
-🚚 From Raw Data to Business Insight
+Misari Dhorajiyia
 
-📂 Data → 🧹 Cleaning → 🗄️ SQL → 🐍 Python → 📊 Power BI → 💡 Insights
+Data Science & AI/ML Student
 
-<br>
+Student ID · 11960
 
-⭐ Delivery Delay Analysis — Set A
+Data Analysis Practical Examination · Set A
 
-Misari Dhorajiyia | Student ID 11960
+<br/>
 
-<br>
+All work in this repository is my own except where cited.
 
+</div>
 
+<div align="center">
 
+🚚 Delivery Delay Analytics
 
+Raw Data → Clean Data → Analysis → Validation → Insights
 
+<br/>
+
+Built with Excel · SQL · Python · Power BI
 
 </div>
