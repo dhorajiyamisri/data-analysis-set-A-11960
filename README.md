@@ -1,5 +1,12 @@
 # 🚚 Delivery Delay Analysis
 
+<div align="center">
+
+<img src="![Uploading image.png…]()
+" width="100%" alt="Delivery Delay Analysis">
+
+</div>
+
 ### 📊 Data Analysis Set A | End-to-End Delivery Performance Analytics
 
 > An end-to-end data analysis project focused on analyzing delivery delays,
