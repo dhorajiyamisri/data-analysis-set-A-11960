@@ -1,12 +1,5 @@
 # 🚚 Delivery Delay Analysis
 
-<div align="center">
-
-<img src="![Uploading image.png…]()
-" width="100%" alt="Delivery Delay Analysis">
-
-</div>
-
 ### 📊 Data Analysis Set A | End-to-End Delivery Performance Analytics
 
 > An end-to-end data analysis project focused on analyzing delivery delays,
@@ -52,5 +45,44 @@ Excel, SQL, Python, and Power BI.
 ### 🚀 Shaping Skills for Scaling Higher
 
 **Red & White Skill Education**
+
+# 🎯 Business Objective
+
+The objective of this project is to analyze delivery performance and
+identify the major factors contributing to delivery delays.
+
+The analysis uses delivery records, route information, service types,
+hubs, promised delivery time, and actual delivery time to calculate
+delay performance and generate actionable business insights.
+
+The project applies Excel, SQL, Python, and Power BI to perform
+data cleaning, analysis, visualization, and cross-tool validation.
+
+---
+
+# ❓ Business Questions
+
+### 1️⃣ Which service type and route contribute the most to total delivery delay?
+
+This question helps identify service categories and individual routes
+that contribute significantly to cumulative delivery delays.
+
+### 2️⃣ Which hubs and months show the highest delivery delay?
+
+This question helps identify locations and time periods where delivery
+performance requires further operational investigation.
+
+---
+
+# 📁 Dataset
+
+The project uses two CSV files:
+
+```text
+data/raw/
+├── deliveries.csv
+└── routes.csv
+
+
 
 ---
