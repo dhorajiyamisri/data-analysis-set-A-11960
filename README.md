@@ -47,11 +47,10 @@ actionable business insights using <b>Excel, SQL, Python, and Power BI</b>.
 | **Domain**        | **Data Analytics & Logistics**          |
 
 ---
-
 <table>
 <tr>
 
-<td width="55%" valign="top">
+<td width="52%" valign="middle">
 
 <h1>🚚 Delivery Delay Analysis</h1>
 
@@ -66,63 +65,38 @@ generating actionable business insights using
 
 <br>
 
-<h3>🎯 What This Project Does</h3>
+<h3>🎯 Project Focus</h3>
 
-<ul>
-<li>Analyzes overall delivery performance</li>
-<li>Identifies delayed deliveries</li>
-<li>Calculates delay duration and delay incidence rate</li>
-<li>Finds operational patterns behind delays</li>
-<li>Validates results across four analytical tools</li>
-<li>Provides business recommendations</li>
-</ul>
+<p>
+📦 Delivery Performance &nbsp; • &nbsp;
+⏱️ Delay Analysis &nbsp; • &nbsp;
+📊 Business Insights
+</p>
 
 <br>
 
-<h3>👤 Student Information</h3>
-
-<table>
-<tr>
-<td><b>Student</b></td>
-<td>Misari Dhorajiya</td>
-</tr>
-<tr>
-<td><b>Student ID</b></td>
-<td>11960</td>
-</tr>
-<tr>
-<td><b>Exam Set</b></td>
-<td>Set A</td>
-</tr>
-<tr>
-<td><b>Domain</b></td>
-<td>Data Analytics & Logistics</td>
-</tr>
-</table>
+<p>
+<b>👤 Misari Dhorajiya</b><br>
+🎓 Student ID: <b>11960</b><br>
+📚 Practical Examination — <b>Set A</b><br>
+🏢 Red & White Skill Education
+</p>
 
 </td>
 
-<td width="45%" valign="top">
+<td width="48%" align="center">
 
-<h3>🎥 Project Walkthrough</h3>
+<img src="YOUR_DELIVERY_DELAY_GIF_URL" width="100%">
 
-<a href="YOUR_VIDEO_URL">
-<img src="YOUR_VIDEO_THUMBNAIL_URL" width="100%">
-</a>
+<br><br>
 
-<p align="center">
-<b>▶ Watch Project Walkthrough</b>
-</p>
+<b>🚚 Delivery Delay Analytics</b>
 
-<p>
-The video demonstrates the complete Delivery Delay Analysis workflow,
-including dataset preparation, Excel analysis, SQL queries, Python
-analysis, Power BI dashboard, key findings, and business recommendation.
-</p>
+<br>
 
-<p align="center">
-<b>⏱️ Duration:</b> XX:XX
-</p>
+<sub>
+Tracking deliveries • Detecting delays • Finding patterns • Generating insights
+</sub>
 
 </td>
 
