@@ -1,132 +1,701 @@
-```markdown
+<div align="center">
+
 # 🚚 Delivery Delay Analysis
 
-### 📊 Data Analysis Set A | End-to-End Delivery Performance Analytics
+### 📊 End-to-End Delivery Performance Analytics
 
-> An end-to-end data analysis project focused on analyzing delivery delays,
-> identifying operational patterns, and generating actionable business insights
-> using Excel, SQL, Python, and Power BI.
+**Data Analysis Practical Examination · Set A**
 
----
+<p>
+An end-to-end data analytics project focused on analyzing delivery delays,
+identifying operational patterns, measuring delivery performance, and generating
+actionable business insights using <b>Excel, SQL, Python, and Power BI</b>.
+</p>
 
-## 👤 Student Information
+<br>
 
-| Detail | Information |
-|---|---|
-| **Student Name** | **Misari Dhorajiya** |
-| **Student ID** | **11960** |
-| **Assigned Set** | **Data Analysis Set A** |
-| **Project Title** | **End-to-End Delivery Performance Analytics** |
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge\&logo=pandas\&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-PostgreSQL-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)
+![Excel](https://img.shields.io/badge/Excel-Analysis-217346?style=for-the-badge\&logo=microsoft-excel\&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge\&logo=powerbi\&logoColor=black)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557C?style=for-the-badge\&logo=matplotlib\&logoColor=white)
 
----
-
-## 🚀 Features
-
-This project offers a comprehensive analysis of delivery operations, including:
-
-*   **Data Ingestion and Cleaning:** Processing raw delivery and route data.
-*   **SQL-based Data Exploration:** Utilizing SQL for initial data querying and structuring.
-*   **Python for Advanced Analysis:** Employing Python for in-depth analysis, visualization, and data manipulation.
-*   **Excel for Reporting:** Leveraging Excel for detailed reporting and summary statistics.
-*   **Power BI for Interactive Dashboards:** Creating interactive dashboards for insightful visualization and business intelligence.
-*   **Identification of Delay Factors:** Pinpointing key reasons and patterns contributing to delivery delays.
-*   **Operational Pattern Recognition:** Uncovering trends in delivery routes and service types.
-*   **Actionable Insights Generation:** Providing data-driven recommendations for improving delivery efficiency.
+</div>
 
 ---
 
-## 🛠️ Installation
-
-This project does not require a formal installation process. The core components are analysis scripts and data files. To run the Python scripts, ensure you have Python and the necessary libraries installed.
-
-1.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/dhorajiyamisri/data-analysis-set-A-11960.git
-    ```
-
-2.  **Navigate to the Project Directory:**
-    ```bash
-    cd data-analysis-set-A-11960
-    ```
-
-3.  **Install Python Dependencies (Recommended):**
-    It is recommended to use a virtual environment.
-    ```bash
-    # Create a virtual environment
-    python -m venv venv
-
-    # Activate the virtual environment
-    # On Windows:
-    # venv\Scripts\activate
-    # On macOS/Linux:
-    # source venv/bin/activate
-
-    # Install necessary libraries (example, specific libraries might be needed based on the scripts)
-    pip install pandas matplotlib seaborn openpyxl
-    ```
+> ## **"Quality is our Motto."**
+>
+> ### Practical Exam — Data Analysis (Set A)
+>
+> **Shaping "skills" for "scaling" higher ...!!!**
+>
+> **Red & White Skill Education**
 
 ---
 
-## 💡 Usage
+# 👤 Student & Examination Information
 
-This project is designed for analysis and exploration. The primary analysis is conducted using the provided Python scripts and SQL queries.
+| 📌 Detail         | 📋 Information                          |
+| :---------------- | :-------------------------------------- |
+| **Student Name**  | **Misari Dhorajiya**                    |
+| **Student ID**    | **11960**                               |
+| **Assigned Set**  | **Data Analysis Set A**                 |
+| **Project Title** | **Delivery Delay Analysis**             |
+| **Project Type**  | **Data Analysis Practical Examination** |
+| **Domain**        | **Data Analytics & Logistics**          |
 
-### Python Analysis
+---
 
-The `python/analysis.py` script contains the core Python analysis logic. You can execute it to generate charts and summary data.
+<table>
+<tr>
+
+<td width="55%" valign="top">
+
+<h1>🚚 Delivery Delay Analysis</h1>
+
+<h3>📊 End-to-End Delivery Performance Analytics</h3>
+
+<p>
+An end-to-end data analytics project focused on analyzing delivery delays,
+identifying operational patterns, measuring delivery performance, and
+generating actionable business insights using
+<b>Excel, SQL, Python, and Power BI.</b>
+</p>
+
+<br>
+
+<h3>🎯 What This Project Does</h3>
+
+<ul>
+<li>Analyzes overall delivery performance</li>
+<li>Identifies delayed deliveries</li>
+<li>Calculates delay duration and delay incidence rate</li>
+<li>Finds operational patterns behind delays</li>
+<li>Validates results across four analytical tools</li>
+<li>Provides business recommendations</li>
+</ul>
+
+<br>
+
+<h3>👤 Student Information</h3>
+
+<table>
+<tr>
+<td><b>Student</b></td>
+<td>Misari Dhorajiya</td>
+</tr>
+<tr>
+<td><b>Student ID</b></td>
+<td>11960</td>
+</tr>
+<tr>
+<td><b>Exam Set</b></td>
+<td>Set A</td>
+</tr>
+<tr>
+<td><b>Domain</b></td>
+<td>Data Analytics & Logistics</td>
+</tr>
+</table>
+
+</td>
+
+<td width="45%" valign="top">
+
+<h3>🎥 Project Walkthrough</h3>
+
+<a href="YOUR_VIDEO_URL">
+<img src="YOUR_VIDEO_THUMBNAIL_URL" width="100%">
+</a>
+
+<p align="center">
+<b>▶ Watch Project Walkthrough</b>
+</p>
+
+<p>
+The video demonstrates the complete Delivery Delay Analysis workflow,
+including dataset preparation, Excel analysis, SQL queries, Python
+analysis, Power BI dashboard, key findings, and business recommendation.
+</p>
+
+<p align="center">
+<b>⏱️ Duration:</b> XX:XX
+</p>
+
+</td>
+
+</tr>
+</table>
+
+# 🎯 Business Objective
+
+The objective of this project is to analyze delivery performance and identify
+patterns associated with delivery delays.
+
+The analysis combines **Excel, SQL, Python, and Power BI** to transform raw
+delivery data into meaningful business insights.
+
+The project focuses on:
+
+* Measuring overall delivery performance
+* Identifying delayed deliveries
+* Calculating delay duration
+* Comparing delivery performance across relevant categories
+* Identifying operational patterns
+* Creating interactive business dashboards
+* Supporting data-driven operational decisions
+
+---
+
+# ❓ Business Questions
+
+The analysis answers the following two primary business questions:
+
+### Q1. What is the overall delivery delay performance?
+
+This question evaluates:
+
+* Total deliveries
+* Delayed deliveries
+* Average delay
+* Delay incidence rate
+* Delivery performance across relevant categories
+
+### Q2. Which operational patterns are associated with higher delivery delays?
+
+This question investigates delivery delays across available dimensions such as:
+
+* Delivery routes / locations
+* Service or delivery categories
+* Time-based patterns
+* Other relevant operational attributes available in the dataset
+
+---
+
+# 📂 Dataset
+
+The project uses the delivery dataset provided for **Data Analysis Set A**.
+
+### Dataset Files
+
+| File                                       | Purpose                           |
+| :----------------------------------------- | :-------------------------------- |
+| `data/raw/delivery_data.csv`               | Raw delivery dataset              |
+| `data/processed/cleaned_delivery_data.csv` | Cleaned dataset used for analysis |
+
+> **Note:** Update the filenames above if the actual repository filenames are different.
+
+---
+
+# 📖 Data Dictionary
+
+The following table documents the main variables used in the analysis.
+
+| Column Name              | Data Type | Meaning                                             |
+| :----------------------- | :-------- | :-------------------------------------------------- |
+| `delivery_date`          | Date      | Date associated with the delivery                   |
+| `expected_delivery_date` | Date      | Expected / scheduled delivery date                  |
+| `actual_delivery_date`   | Date      | Actual delivery completion date                     |
+| `route`                  | Text      | Delivery route or route identifier                  |
+| `location`               | Text      | Delivery location / area                            |
+| `delivery_status`        | Text      | Delivery status                                     |
+| `delay_days`             | Numeric   | Number of days between actual and expected delivery |
+| `service_type`           | Text      | Type/category of delivery service                   |
+
+> **Important:** Replace this table with the **exact column names from the supplied CSV** before final submission.
+
+---
+
+# 🧹 Data Cleaning & Preparation
+
+The following cleaning and preparation steps were performed before analysis:
+
+### 1. Data Inspection
+
+* Checked dataset dimensions
+* Reviewed column names
+* Checked data types
+* Inspected duplicate records
+* Checked missing values
+* Reviewed categorical values
+
+### 2. Date Cleaning
+
+Date fields were converted into appropriate date formats to allow accurate
+delivery-time calculations and time-based analysis.
+
+### 3. Missing Values
+
+Missing values were identified and handled according to the nature of each
+column.
+
+### 4. Duplicate Records
+
+Duplicate records were checked and removed where appropriate.
+
+### 5. Data Type Correction
+
+Columns containing dates and numerical values stored as text were converted
+to appropriate data types.
+
+### 6. Delay Feature Creation
+
+A derived `delay_days` metric was created for delivery-delay analysis.
+
+---
+
+# 📐 Metric Definitions
+
+## Delay Days
+
+The number of days a delivery was late compared with its expected delivery date.
+
+```text
+delay_days = actual_delivery_date - expected_delivery_date
+```
+
+For reporting purposes, a delivery is considered **delayed when delay_days > 0**.
+
+---
+
+## Delay Incidence Rate
+
+The percentage of deliveries that were delayed.
+
+```text
+Delay Incidence Rate (%) =
+(Number of Delayed Deliveries / Total Deliveries) × 100
+```
+
+Where:
+
+```text
+Delayed Deliveries = COUNT(delay_days > 0)
+```
+
+and
+
+```text
+Total Deliveries = COUNT(all valid deliveries)
+```
+
+---
+
+## Average Delay
+
+```text
+Average Delay =
+SUM(delay_days for delayed deliveries)
+/
+Number of delayed deliveries
+```
+
+> The exact calculation should follow the metric definition used consistently
+> across Excel, SQL, Python and Power BI.
+
+---
+
+# 🛠️ Tools & Versions
+
+| Tool                 | Purpose                                   | Version                      |
+| :------------------- | :---------------------------------------- | :--------------------------- |
+| **Microsoft Excel**  | Data cleaning, calculations and reporting | TODO — add installed version |
+| **Power BI Desktop** | Interactive dashboard and visualization   | TODO — add version           |
+| **PostgreSQL**       | SQL analysis and aggregation              | TODO — add version           |
+| **Python**           | Data analysis and visualization           | TODO — add version           |
+| **Pandas**           | Data manipulation and analysis            | TODO                         |
+| **NumPy**            | Numerical operations                      | TODO                         |
+| **Matplotlib**       | Data visualization                        | TODO                         |
+| **Seaborn**          | Statistical visualization                 | TODO                         |
+| **OpenPyXL**         | Excel file handling                       | TODO                         |
+
+---
+
+# 📁 Project Folder Structure
+
+```text
+data-analysis-set-A-11960/
+│
+├── README.md
+├── requirements.txt
+│
+├── data/
+│   ├── raw/
+│   │   └── delivery_data.csv
+│   │
+│   └── processed/
+│       └── cleaned_delivery_data.csv
+│
+├── excel/
+│   └── analysis.xlsx
+│
+├── sql/
+│   ├── setup.sql
+│   └── queries.sql
+│
+├── python/
+│   └── analysis.py
+│
+├── outputs/
+│   ├── charts/
+│   └── summaries/
+│
+├── power_bi/
+│   └── delivery_delay_dashboard.pbix
+│
+└── video/
+    └── project_demo.mp4
+```
+
+> Update this structure if your actual GitHub folder names differ.
+
+---
+
+# 🗄️ SQL Setup & Query Execution
+
+The SQL analysis is divided into two stages.
+
+## Step 1 — Run `setup.sql`
+
+The setup script creates the required database table and loads/prepares the
+dataset for SQL analysis.
+
+Example:
+
+```sql
+-- Run first
+\i sql/setup.sql
+```
+
+Or open `setup.sql` in your PostgreSQL client and execute the complete script.
+
+---
+
+## Step 2 — Run `queries.sql`
+
+After the setup is completed, execute:
+
+```sql
+-- Run second
+\i sql/queries.sql
+```
+
+The query file contains analysis for:
+
+* Total deliveries
+* Delayed deliveries
+* Delay incidence rate
+* Average delay
+* Category-wise delivery performance
+* Route/location analysis
+* Delay pattern analysis
+* Business-question analysis
+
+### Execution Order
+
+```text
+Raw CSV
+   ↓
+setup.sql
+   ↓
+Database Table
+   ↓
+queries.sql
+   ↓
+Analysis Results
+```
+
+**Important:** Always run `setup.sql` before `queries.sql`.
+
+---
+
+# 🐍 Python Environment Setup
+
+## 1. Clone the Repository
 
 ```bash
-# Ensure your virtual environment is activated
+git clone https://github.com/dhorajiyamisri/data-analysis-set-A-11960.git
+```
+
+## 2. Open the Project
+
+```bash
+cd data-analysis-set-A-11960
+```
+
+## 3. Create Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### macOS / Linux
+
+```bash
+source venv/bin/activate
+```
+
+## 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 5. Run Python Analysis
+
+```bash
 python python/analysis.py
 ```
 
-This will produce outputs in the `outputs/` directory, such as `python_chart.png` and `python_summary.csv`.
+The analysis generates the required summary outputs and visualizations inside
+the `outputs/` directory.
 
-### SQL Queries
+---
 
-The `sql/` directory contains SQL scripts for data querying. These can be executed against a suitable database.
+# 📊 Excel Sheet Guide
 
-```sql
--- Example of executing a query from sql/query.sql
--- (This would typically be done within a SQL client or programmatically)
--- For example, using a hypothetical Python script to run SQL:
--- import sqlite3
--- conn = sqlite3.connect('your_database.db')
--- cursor = conn.cursor()
--- with open('sql/query.sql', 'r') as f:
---     sql_script = f.read()
--- cursor.execute(sql_script)
--- results = cursor.fetchall()
--- conn.close()
+The Excel workbook is used for calculations, validation and reporting.
+
+| Sheet            | Purpose                           |
+| :--------------- | :-------------------------------- |
+| **Raw_Data**     | Original dataset                  |
+| **Cleaned_Data** | Cleaned and prepared dataset      |
+| **Calculations** | Delivery and delay calculations   |
+| **Summary**      | Key metrics and aggregate results |
+| **Analysis**     | Business-question analysis        |
+| **Charts**       | Excel-based visualizations        |
+
+> Rename this table to match the **actual sheet names in your workbook**.
+
+---
+
+# 📈 Power BI Dashboard
+
+The Power BI dashboard provides an interactive view of delivery performance.
+
+### Main dashboard areas
+
+* Total Deliveries
+* Delayed Deliveries
+* Delay Incidence Rate
+* Average Delay
+* Delivery Trend
+* Category / Route Performance
+* Delay Distribution
+* Interactive filters
+
+---
+
+# 🔄 Power BI Data-Source Refresh
+
+After cloning the repository, the local CSV path may be different from the
+original computer.
+
+To update the source:
+
+### Step 1
+
+Open:
+
+```text
+power_bi/delivery_delay_dashboard.pbix
 ```
 
-### Excel and Power BI
+### Step 2
 
-The `excel/analysis.xlsx` file and the Power BI file (`power bi/power bi.pbix`) can be opened directly with their respective applications to view the reports and dashboards.
+Go to:
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have suggestions for improving this analysis or would like to contribute, please follow these steps:
-
-1.  Fork the repository.
-2.  Create a new branch for your feature or bug fix.
-3.  Make your changes and commit them.
-4.  Push to the branch.
-5.  Open a Pull Request.
-
----
-
-## 📄 License
-
-This project is not currently under any specified license. Please refer to the individual files for any specific usage rights.
+```text
+Home → Transform Data → Data Source Settings
 ```
 
+### Step 3
+
+Select the CSV source and choose:
+
+```text
+Change Source
+```
+
+### Step 4
+
+Select the cloned repository's CSV file:
+
+```text
+data/raw/delivery_data.csv
+```
+
+or the actual cleaned CSV used by the dashboard.
+
+### Step 5
+
+Click:
+
+```text
+Close & Apply
+```
+
+### Step 6
+
+Click:
+
+```text
+Refresh
+```
+
+The dashboard should now use the local dataset from the cloned repository.
+
 ---
 
-<p align="center">
-  <a href="https://readmeforge.app?utm_source=badge">
-    <img src="https://readmeforge.app/badge.svg" alt="Made with ReadmeForge" height="20">
-  </a>
-</p>
+# 🔍 Key Findings
+
+The following findings are based on the completed analysis.
+
+### Finding 1 — Overall Delay Performance
+
+**TODO:** Insert your actual numeric finding.
+
+Example format:
+
+> **Finding 1:** The analysis identified **XX delayed deliveries out of XX
+> total deliveries**, resulting in a delay incidence rate of **XX.XX%**.
+
+### Finding 2 — Operational Delay Pattern
+
+**TODO:** Insert your actual numeric finding.
+
+Example format:
+
+> **Finding 2:** **[Category / Route / Location]** recorded the highest delay
+> incidence rate of **XX.XX%**, indicating a potential operational bottleneck.
+
+---
+
+# 💡 Business Recommendation
+
+Based on the analysis:
+
+> **Recommendation:** Management should focus on the operational category /
+> route / location with the highest delay incidence and monitor its delivery
+> performance regularly. A Power BI-based monitoring process can be used to
+> track delay incidence rate and average delay over time so that recurring
+> bottlenecks can be identified and addressed earlier.
+
+---
+
+# 🔁 Cross-Tool Reconciliation
+
+To ensure consistency, one common aggregate metric was compared across all
+four analytical tools.
+
+### Reconciliation Metric
+
+**Total Deliveries**
+
+| Tool         | Result |
+| :----------- | -----: |
+| **Excel**    |   TODO |
+| **SQL**      |   TODO |
+| **Python**   |   TODO |
+| **Power BI** |   TODO |
+
+### Reconciliation Result
+
+```text
+Excel   = TODO
+SQL     = TODO
+Python  = TODO
+Power BI = TODO
+```
+
+### Rounding Note
+
+Small differences, if any, may occur because of:
+
+* Decimal rounding
+* Different display precision
+* Filtering context
+* Data-type conversion
+
+The underlying records and calculation logic should remain consistent across
+all four tools.
+
+---
+
+# 🎥 Working Video
+
+A working demonstration video is included / linked below.
+
+### Video
+
+**URL:** TODO — paste YouTube / Google Drive / GitHub video URL
+
+**Duration:** TODO minutes : TODO seconds
+
+The demonstration should cover:
+
+1. Dataset
+2. Excel analysis
+3. SQL execution
+4. Python analysis
+5. Power BI dashboard
+6. Key findings
+7. Final recommendation
+
+---
+
+# 📚 References
+
+The project primarily uses the assigned dataset and standard analytical tools.
+
+External resources used for technical reference, if any:
+
+* Python documentation
+* Pandas documentation
+* PostgreSQL documentation
+* Microsoft Excel documentation
+* Microsoft Power BI documentation
+
+Any external code, snippets, datasets or resources used in the project are
+credited here.
+
+---
+
+# ✍️ Authorship Declaration
+
+> **All work in this repository is my own except where cited.**
+
+---
+
+# 👩‍💻 Author
+
+### **Misari Dhorajiya**
+
+**Data Science / AI-ML Learner**
+
+📌 Data Analytics · Python · SQL · Excel · Power BI
+
+🔗 GitHub:
+https://github.com/dhorajiyamisri
+
+---
+
+<div align="center">
+
+### 🚚 Delivery Delay Analysis
+
+**Data Analysis Practical Examination — Set A**
+
+**Misari Dhorajiya · Student ID 11960**
+
+⭐ Thank you for reviewing this project!
+
+</div>
